@@ -1,31 +1,30 @@
 import React from 'react';
-import { MessageCircle } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const WhatsAppButton = () => {
     return (
         <a
-            href="https://wa.me/1234567890"
+            href="https://wa.me/5215512345678"
             target="_blank"
             rel="noreferrer"
             className="fixed bottom-8 right-8 z-50 flex items-center justify-center"
         >
             <motion.div
-                className="relative bg-slate-700/80 backdrop-blur-sm text-lime-400 p-4 rounded-full shadow-lg border border-slate-600 hover:bg-slate-600 transition-colors"
+                className="relative bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform"
                 initial={{ scale: 0 }}
                 animate={{ scale: 1 }}
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
+                whileHover={{ scale: 1.15 }}
+                whileTap={{ scale: 0.95 }}
             >
-                {/* Pulsing effect - now relative to the whole button */}
+                {/* Pulsing effect */}
                 <motion.div
-                    className="absolute inset-0 rounded-full bg-lime-400"
+                    className="absolute inset-0 rounded-full bg-[#25D366]"
                     animate={{
-                        scale: [1, 1.6],
-                        opacity: [0, 0.4, 0]
+                        scale: [1, 1.4],
+                        opacity: [0.5, 0]
                     }}
                     transition={{
-                        duration: 2.5,
+                        duration: 2,
                         repeat: Infinity,
                         ease: "easeOut"
                     }}

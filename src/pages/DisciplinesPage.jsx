@@ -134,9 +134,11 @@ const DisciplinesPage = () => {
                                             ))}
                                         </div>
 
-                                        <PremiumButton onClick={() => window.location.href = '/#contact'}>
-                                            Reservar Horario
-                                        </PremiumButton>
+                                        <Link to="/contacto">
+                                            <PremiumButton>
+                                                Reservar Horario
+                                            </PremiumButton>
+                                        </Link>
                                     </motion.div>
                                 </div>
                             </div>
@@ -152,7 +154,7 @@ const DisciplinesPage = () => {
                         ¿LISTO PARA <br /> LA TRANSFORMACIÓN?
                     </h2>
                     <div className="flex justify-center">
-                        <Link to="/#contact">
+                        <Link to="/contacto">
                             <PremiumButton variant="secondary" className="!bg-slate-950 !text-lime-400">
                                 Empieza hoy mismo
                             </PremiumButton>

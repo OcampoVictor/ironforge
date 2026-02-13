@@ -181,7 +181,7 @@ const StoriesPage = () => {
                                 Únete a la tribu. No importa de dónde vienes, importa hacia dónde vamos juntos.
                             </p>
 
-                            <Link to="/#contact">
+                            <Link to="/contacto">
                                 <PremiumButton icon={<ArrowRight className="w-5 h-5" />}>
                                     Empieza tu Transformación
                                 </PremiumButton>

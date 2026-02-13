@@ -53,7 +53,7 @@ const Disciplines = () => {
                     ))}
                 </div>
 
-                <div className="text-center">
+                <div className="flex justify-center">
                     <Link to="/disciplinas">
                         <PremiumButton icon={<ArrowRight className="w-5 h-5" />}>
                             Explorar Todas las Disciplinas

@@ -85,7 +85,7 @@ const Testimonials = () => {
                     ))}
                 </motion.div>
 
-                <div className="text-center mt-20">
+                <div className="flex justify-center mt-20">
                     <Link to="/historias">
                         <PremiumButton icon={<ArrowRight className="w-5 h-5" />}>
                             Ver más historias

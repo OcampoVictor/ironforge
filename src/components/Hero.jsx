@@ -1,6 +1,7 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import PremiumButton from './PremiumButton';
 
 const Hero = () => {
@@ -49,11 +50,13 @@ const Hero = () => {
                     transition={{ duration: 0.5, delay: 0.4 }}
                     className="flex justify-center"
                 >
-                    <PremiumButton
-                        icon={<ArrowRight className="w-5 h-5" />}
-                    >
-                        EMPIEZA TU VIAJE
-                    </PremiumButton>
+                    <Link to="/contacto">
+                        <PremiumButton
+                            icon={<ArrowRight className="w-5 h-5" />}
+                        >
+                            EMPIEZA TU VIAJE
+                        </PremiumButton>
+                    </Link>
                 </motion.div>
             </div>
         </section>
